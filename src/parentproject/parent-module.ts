@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { StoreModule, ActionReducerMap } from '@ngrx/store';
-import { USER_NAME } from 'src/sideproject/username/token';
+import { USER_NAME } from '../sideproject/username/token';
 
 import { State } from './state/contract';
 import { myFeature, blafaselFeature, testReducer, blafaselReducer } from './state/reducer';

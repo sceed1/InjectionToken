@@ -1,5 +1,8 @@
 import { createFeatureSelector, createSelector } from '@ngrx/store';
-import { featurename, State } from './contract';
+import { State } from './contract';
+import { myFeature } from './reducer';
 
-const featureSelector = createFeatureSelector<State['myfeature']>(featurename);
-export const userSelector = createSelector(featureSelector, (s) => s.username);
+const myFeatureSelector = createFeatureSelector<State['myfeature']>(myFeature);
+
+export const userSelector = createSelector(myFeatureSelector, (s) => s.username);
+
